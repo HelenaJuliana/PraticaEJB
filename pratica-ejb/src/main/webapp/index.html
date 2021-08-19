@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h2>Inserir mensagem</h2>
+<br>
+<form action="mensagem.do" method="GET">
+    Id: <input name="id"><br>
+    Texto: <input name="texto">
+    <input type="hidden" name="oper" value="1" />
+    <button>Inserir</button>
+</form>
+
+<br>
+<h2>Listar mensagens</h2>
+<form action="mensagem.do" method="GET">
+    <input type="hidden" name="oper" value="2" />
+    <button>Listar mensagem</button>
+</form>
+
+<br>
+<h2>Pesquisar por ID</h2>
+<form action="mensagem.do" method="GET">
+    Id: <input name="id">
+    <input type="hidden" name="oper" value="3" />
+    <button>Pesquisar por ID</button>
+</form>
+</body>
+</html>
